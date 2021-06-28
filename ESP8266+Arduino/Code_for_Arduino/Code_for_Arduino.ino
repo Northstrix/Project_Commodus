@@ -3,7 +3,8 @@
 // Distributed under the MIT License
 // For more information visit https://github.com/Northstrix/Project_Commodus
 #include <LiquidCrystal.h>
-LiquidCrystal lcd(13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3);
+LiquidCrystal lcd(13, 12, 11, 6, 5, 4, 3);  /* For 4-bit mode */
+//LiquidCrystal lcd(13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3); /* For 8-bit mode */
 String str;
 String str2 = "if|qZ5uQw~}Eo~dm{PRypXE#oj:WHZ}w*Tn#@E2%Nc=qSs:lJtZ/[W,eAfG`i`'"; // Clear sequence
 int i = 0;
@@ -45,4 +46,3 @@ void loop() {
   lcd.write(1);
   delay(10);
 }
-
